@@ -1,0 +1,24 @@
+{
+  "name": "ib-verify-lineage",
+  "version": "1.0.0",
+  "description": "Node JS server to verify custom lineages from infinibrowser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ActiveTutorial/ib-verify-lineage.git"
+  },
+  "author": "Active Tutorial",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ActiveTutorial/ib-verify-lineage/issues"
+  },
+  "homepage": "https://github.com/ActiveTutorial/ib-verify-lineage#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "ic-proxy": "github:ActiveTutorial/ic-proxy"
+  }
+}
