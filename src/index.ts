@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express';
 import axios from 'axios';
-import { initializeIC } from 'ic-proxy';
+import InfiniteCraftProxy from 'ic-proxy';
 import { Step, LineageResponse } from './types';
 
 const app = express();
@@ -65,7 +65,7 @@ app.get('/verify', async (req: Request, res: Response): Promise<void> => {
     }
 });
 
-initializeIC().then(() => {
+InfiniteCraftProxy.create().then(() => {
     app.listen(port, () => {
         console.log(`Server is running on http://localhost:${port}`);
     });
